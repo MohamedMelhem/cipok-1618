@@ -1,0 +1,21 @@
+{
+    "cipok" :
+    [
+        {
+            "marka" : "Nike",
+            "tipus" : "Air force",
+            "meret" : "42"
+        },
+        {
+            "marka" : "Adidas",
+            "tipus" : "samba",
+            "meret" : "45"
+        },
+        {
+            "marka" : "New Balance",
+            "tipus" : "fresh",
+            "meret" : "45"
+        }
+        
+    ]
+}
