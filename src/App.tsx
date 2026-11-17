@@ -8,6 +8,7 @@ function App() {
 
   const [marka, SetMarka] = useState<string>("");
   const [meret, Setmeret] = useState<string>("");
+  const [kaphatoe,SetKaphatoe] = useState<boolean>(false);
 
   useEffect(() => {
     async function fetchCipok() {
@@ -28,6 +29,7 @@ function App() {
     const ujCipo = {
       marka: marka,
       meret: meret,
+      kaphatoe : kaphatoe
     };
     try {
       const response = await fetch("http://localhost:3000/cipok", {
@@ -39,6 +41,7 @@ function App() {
       Setcipo((elozo) => [...elozo, cipok]);
       SetMarka("");
       Setmeret("");
+      SetKaphatoe(false)
     } catch (err) {
       console.log("Hiba történt felvételnél:" + err.message);
     }
@@ -56,6 +59,7 @@ function App() {
           <tr>
             <th>Márka</th>
             <th>Méret</th>
+            <th>Raktáron van e</th>
           </tr>
         </thead>
         <tbody>
@@ -63,6 +67,7 @@ function App() {
             <tr key={user.id}>
               <td>{user.marka}</td>
               <td>{user.meret}</td>
+              <td>{user.kaphatoe ? 'I' : 'N'}</td>
             </tr>
           ))}
         </tbody>
@@ -88,6 +93,12 @@ function App() {
             onChange={(e) => Setmeret(e.target.value)}
           />
         </label>
+     <input
+  type="checkbox"
+  id="kaphatoe"
+  checked={kaphatoe}
+  onChange={(e) => SetKaphatoe(e.target.checked)}
+/>
         <br />
         <button type="submit">Felvétel</button>
       </form>

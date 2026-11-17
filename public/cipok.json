@@ -4,24 +4,20 @@
       "marka": "Nike",
       "tipus": "Air force",
       "meret": "42",
+      "kaphatoe": false,
       "id": "WNwu7OXnX3Q"
     },
     {
-      "marka": "Adidas",
-      "tipus": "samba",
-      "meret": "45",
-      "id": "icLxtOH8PEA"
+      "marka": "Mike",
+      "meret": "11",
+      "kaphatoe": true,
+      "id": "3GFlOWDj5n0"
     },
     {
-      "marka": "New Balance",
-      "tipus": "fresh",
-      "meret": "45",
-      "id": "4aQAU0Uaihs"
-    },
-    {
-      "marka": "Gucci",
-      "meret": "23",
-      "id": "XnVW5tQT1l8"
+      "marka": "aa",
+      "meret": "2",
+      "kaphatoe": true,
+      "id": "HyQ_GqX50n4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
