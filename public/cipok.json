@@ -1,21 +1,28 @@
 {
-    "cipok" :
-    [
-        {
-            "marka" : "Nike",
-            "tipus" : "Air force",
-            "meret" : "42"
-        },
-        {
-            "marka" : "Adidas",
-            "tipus" : "samba",
-            "meret" : "45"
-        },
-        {
-            "marka" : "New Balance",
-            "tipus" : "fresh",
-            "meret" : "45"
-        }
-        
-    ]
+  "cipok": [
+    {
+      "marka": "Nike",
+      "tipus": "Air force",
+      "meret": "42",
+      "id": "WNwu7OXnX3Q"
+    },
+    {
+      "marka": "Adidas",
+      "tipus": "samba",
+      "meret": "45",
+      "id": "icLxtOH8PEA"
+    },
+    {
+      "marka": "New Balance",
+      "tipus": "fresh",
+      "meret": "45",
+      "id": "4aQAU0Uaihs"
+    },
+    {
+      "marka": "Gucci",
+      "meret": "23",
+      "id": "XnVW5tQT1l8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
